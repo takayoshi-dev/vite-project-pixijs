@@ -4,13 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "fix-format": "prettier --write . && eslint --fix .",
     "type-check": "tsc -p tsconfig.typecheck.json",
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
     "typescript": "~5.8.3",
+    "typescript-eslint": "^8.32.1",
     "vite": "^6.3.5"
   }
 }
